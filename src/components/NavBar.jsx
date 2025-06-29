@@ -17,23 +17,13 @@ const NavBar = () => {
           </div>
           <ul class="flex-1 flex flex-wrap justify-center md:justify-end items-center">
             {nav.map((n) => (
-              <li class="px-6 md:px-20 py-4 border-r text-gray-700 hover:bg-[#E6E6FA] cursor-pointer">
+              <li class="px-4 md:px-20 py-4 border-r text-gray-700 hover:bg-[#E6E6FA] cursor-pointer">
                 {/* <a href="">{n}</a> */}
                 <Link to={`/${n}`}>{n}</Link>
               </li>
             ))}
-
-            {/* <li class="px-6 md:px-20 py-4 border-r text-gray-700 hover:bg-[#E6E6FA] cursor-pointer">
-              <Link to="/women">Women</Link>
-            </li>
-            <li class="px-6 md:px-20 py-4 border-r text-gray-700 hover:bg-[#E6E6FA] cursor-pointer">
-              <Link to="/men">Men</Link>
-            </li>
-            <li class="px-6 md:px-20 py-4 border-r text-gray-700 hover:bg-[#E6E6FA] cursor-pointer">
-              <Link to="/men">Contact Us</Link>
-            </li> */}
           </ul>
-          <div class="flex justify-center md:justify-end items-center gap-2 py-4px-6 md:px-20">
+          <div class="flex justify-center md:justify-end items-center gap-2 py-4 px-6 md:px-20">
             <div class="flex items-center gap-1 text-gray-800 cursor-pointer">
               <div class="bg-black text-white rounded-full p-1">
                 <svg
