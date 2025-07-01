@@ -41,9 +41,8 @@ const NavBar = () => {
                   />
                 </svg>
               </div>
-              <a href="" target="_blank">
-                Log In
-              </a>
+              <Link to="/login">Log In</Link>
+              {/* <a href="" target="_blank"></a> */}
             </div>
           </div>
         </nav>

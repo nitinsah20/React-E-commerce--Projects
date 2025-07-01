@@ -6,6 +6,11 @@ import Women from "./pages/Women";
 import Men from "./pages/Men";
 import New from "./pages/New";
 import MainLayout from "./layout/MainLayout";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+
+
+
 
 const App = () => {
   return (
@@ -17,6 +22,8 @@ const App = () => {
             <Route path="/women" element={<Women />}></Route>
             <Route path="/men" element={<Men />}></Route>
             <Route path="/new" element={<New />}></Route>
+            <Route path="/login" element={<Login />}></Route>
+            <Route path="/signup" element={<Signup/>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
