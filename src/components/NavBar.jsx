@@ -1,11 +1,14 @@
 import React from "react";
-import { Routes, Route, Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import Product from "../pages/Product";
 
-const NavBar = () => {
-  const nav = ["New", "Women", "Men", "Contact Us"];
+const NavBar = ({ cartCount }) => {
+  const nav = ["New", "Women", "Men"];
+
+
   return (
     <>
-      <header class="w-full">
+      <header class="w-full sticky top-0 z-50  ">
         <div class="bg-black text-white text-center py-2 text-sm">
           Sale is on! 25% off sitewide using TEES25 at checkout
         </div>
@@ -22,6 +25,14 @@ const NavBar = () => {
                 <Link to={`/${n}`}>{n}</Link>
               </li>
             ))}
+            <li class="px-4 md:px-20 py-4 border-r text-gray-700 hover:bg-[#E6E6FA] cursor-pointer">
+              
+                <Link to="">
+                  Cart
+                  <sup className="border-2 px-1 rounded-full">{cartCount}</sup>
+                </Link>
+             
+            </li>
           </ul>
           <div class="flex justify-center md:justify-end items-center gap-2 py-4 px-6 md:px-20">
             <div class="flex items-center gap-1 text-gray-800 cursor-pointer">
@@ -47,6 +58,8 @@ const NavBar = () => {
           </div>
         </nav>
       </header>
+
+      {/* <Product onAddToCart={handleAddToCart} /> */}
     </>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import { useOutletContext } from "react-router-dom";
 
 import data from "../Utility/data.json"
 
@@ -6,7 +7,8 @@ const New = () => {
   // const products = data.filter(
   //   (p) => p.type === "Men T-shirt" || p.type === "Women Top"
   // );
-  
+  const { onAddToCart } = useOutletContext(); 
+
   const products = data
     .filter((p) => ["Men T-Shirt", "Women Top"].includes(p.type))
     .slice(0, 18);
@@ -82,6 +84,12 @@ const New = () => {
                     <p className="h-[78px] overflow-hidden text-[#737373]">
                       {p.description}
                     </p>
+                    <button
+                      onClick={onAddToCart}
+                      className="bg-green-400 w-full p-2 hover:bg-green-300 cursor-pointer"
+                    >
+                      Add to Cart
+                    </button>
                   </div>
                 ))}
               </section>
