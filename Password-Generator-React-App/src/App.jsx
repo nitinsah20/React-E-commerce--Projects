@@ -101,7 +101,7 @@ function App() {
 
             <button
               onClick={generatorPassword}
-              className="w-full mt-4 bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-medium shadow"
+              className=" cursor-pointer w-full mt-4 bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-medium shadow"
             >
               Generate New Password
             </button>
