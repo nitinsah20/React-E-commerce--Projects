@@ -93,7 +93,7 @@ function Footer() {
         </div>
 
         <div className="col-spn-8 md:col-span-5 h-10 md:h-auto bg-[#E6E6FA] text-center p-4 border-t border-black">
-          © 2035 by Aastha jain. All Rights Reserved
+          © 2035 by Nitin Sahu. All Rights Reserved
         </div>
       </section>
     </div>
